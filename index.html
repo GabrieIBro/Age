@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Age</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+        <div id="upper-div">
+            <form action="">
+                <div class="input-div">
+                    <label for="day" id="day-label">DAY</label>
+                    <input type="number" placeholder="DD" name="day" id="day-input" min="1">
+                    <span id="day-error" class="date-error">This field is required</span>
+                </div>
+
+                <div class="input-div">
+                    <label  for="month" id="month-label">MONTH</label>
+                    <input type="number" placeholder="MM" name="month" id="month-input" min="1">
+                    <span id="month-error" class="date-error">Must be a valid month</span>
+                </div>
+
+                <div class="input-div">
+                    <label for="year" id="year-label">YEAR</label>
+                    <input type="number" placeholder="YYYY" name="year" id="year-input" min="1">
+                    <span id="year-error" class="date-error">This field is required</span>
+                </div>
+                <button type="submit"></button>
+            </form>
+        </div>
+
+        <div id="lower-div">
+            <div class="age-text">
+                <h1 id="year">--</h1>
+                <p>years</p>
+            </div>
+
+            <div class="age-text">
+                <h2 id="month">--</h2>
+                <p>months</p>
+            </div>
+
+            <div class="age-text">
+                <h3 id="day">--</h3>
+                <p>days</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

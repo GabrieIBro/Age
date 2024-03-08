@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    background-color: hsl(0, 0%, 86%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    background-color: white;
+    padding: 20px 0;
+    margin: 0 8px;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    min-height: 475px;
+    border-radius: 25px;
+    border-bottom-right-radius: 130px;
+}
+
+#upper-div {
+    display: flex;
+    width: 100%;
+    margin: 30px 0;
+    position: relative;
+}
+
+#upper-div>form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 35px;
+    min-height: 115px;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+    max-width: 80px;
+    height: 100%;
+}
+
+label {
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+input {
+    max-width: 80px;
+    height: 48px;
+    border-radius: 5px;
+    border: solid 1px hsl(0, 0%, 86%);
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    outline: hsl(259, 100%, 65%);
+}
+
+.input-div > span {
+    margin-top: 5px;
+    text-align: center;
+    color: hsl(0, 100%, 67%);
+    display: none;
+}
+
+input:focus {
+    border: solid 1px hsl(259, 100%, 65%);
+}
+
+button {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
+    border: none;
+    background-color: hsl(259, 100%, 65%);
+    background-image: url(./images/icon-arrow.svg);
+    background-position: 50% 50%;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    transition: ease-in-out 100ms;
+    top: 107%;
+    left: calc(50% - 32.5px);
+}
+
+form > button:active {
+    background-color: rgb(39, 39, 39);
+}
+
+button:hover {
+    background-color: black;
+    transform: scale(95%);
+    cursor: pointer;
+}
+
+.date-error {
+    font-size: 11px;
+}
+
+.active-error-text {
+    color: hsl(0, 100%, 67%);
+}
+
+.active-error-input{
+    outline-color: hsl(0, 100%, 67%);
+    border: solid 1px hsl(0, 100%, 67%);
+
+}
+
+#lower-div {
+    border-top: 1px solid hsl(0, 0%, 86%);
+    margin: 0 35px;
+    margin-top: 40px;
+    padding-top: 60px;
+}
+
+.age-text {
+    display: flex;
+    line-height: 60px;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 65px;
+    font-weight: 800;
+    font-style: italic;
+    color: hsl(259, 100%, 65%);
+    margin-right: 10px;
+}
+
+#lower-div p {
+    font-size: 55px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+@media screen and (min-width: 800px){ 
+    main {
+        max-width: 600px;
+        padding: 10px 20px;
+        min-height: 520px;
+    }
+
+    #upper-div>form {
+        justify-content: start;
+        min-height: 98.1px;
+    }
+
+    #upper-div>form>div {
+        margin-right: 25px;
+    }
+
+    .input-div {
+        max-width: none;
+        width: 125px;
+    }
+
+    .input-div>input {
+        max-width: 110px;
+    }
+
+    button {
+        left: 83.5%;
+        top: 114%;
+    }
+
+    h1,h2,h3 {
+        font-size: 90px;
+    }
+
+    #lower-div {
+        padding: 40px 0;
+        margin-top: 45px;
+    }
+
+    #lower-div p{
+        font-size: 80px;
+    }
+
+    .age-text {
+        margin: 30px 0;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
